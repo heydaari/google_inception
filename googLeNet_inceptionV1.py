@@ -184,7 +184,7 @@ x = Dropout(0.4)(x)
 
 output_3 = Dense(10, activation='softmax', name='output')(x)
 
-model = Model(input_layer, [output_1, output_2, output_3], name='inception_v1')
+model = Model(input_layer, [output_1, output_1, output_2], name='inception_v1')
 
 model.summary()
 
